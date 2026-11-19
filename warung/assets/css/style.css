@@ -1,0 +1,276 @@
+/* =============================================
+   STYLE UTAMA - Warung App
+   ============================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background: #e74c3c;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: #c0392b;
+}
+
+/* --- CONTAINER --- */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* --- LOGIN PAGE --- */
+.login-box {
+    max-width: 380px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.login-box p {
+    color: #888;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* --- FORM --- */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+}
+
+/* --- TOMBOL --- */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.btn:hover { opacity: 0.85; }
+
+.btn-primary { background: #3498db; color: white; }
+.btn-success { background: #2ecc71; color: white; }
+.btn-danger  { background: #e74c3c; color: white; }
+.btn-warning { background: #f39c12; color: white; }
+.btn-block   { width: 100%; text-align: center; }
+
+/* --- TABEL --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+
+table th {
+    background: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table td {
+    padding: 11px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+table tr:last-child td { border-bottom: none; }
+table tr:hover td { background: #f9f9f9; }
+
+/* --- CARD / PANEL --- */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* --- PESAN ALERT --- */
+.alert {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.alert-danger   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+.alert-info     { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+
+/* --- BADGE STATUS --- */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-makanan  { background: #fdebd0; color: #d35400; }
+.badge-minuman  { background: #d6eaf8; color: #1a5276; }
+.badge-pending  { background: #fef9e7; color: #d68910; }
+.badge-diproses { background: #d6eaf8; color: #1a5276; }
+.badge-selesai  { background: #d4efdf; color: #1e8449; }
+
+/* --- STATISTIK (Admin Dashboard) --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+
+.stat-box .number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.stat-box .label {
+    color: #888;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* --- MENU CARD (User) --- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.menu-card h4 { color: #2c3e50; margin-bottom: 8px; }
+.menu-card .harga { color: #e74c3c; font-weight: bold; font-size: 16px; margin: 8px 0; }
+.menu-card .deskripsi { color: #888; font-size: 12px; margin-bottom: 15px; }
+
+/* --- TAB NAVIGASI (Admin) --- */
+.tab-nav {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.tab-nav a {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.tab-nav a.active {
+    background: #2c3e50;
+    color: white;
+}
+
+/* --- PAGE TITLE --- */
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-title h2 { color: #2c3e50; }
+
+/* --- TEKS KECIL --- */
+small { color: #888; font-size: 12px; }
+hr { border: none; border-top: 1px solid #eee; margin: 20px 0; }
